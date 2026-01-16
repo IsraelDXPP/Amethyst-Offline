@@ -1,0 +1,56 @@
+{
+  "generator": "codesummary",
+  "version": "1.0.0",
+  "model": "grok-4-1-fast-reasoning",
+  "timestamp": "2026-01-16T20:30:25.004Z",
+  "analysis": {
+    "projectName": "Amethyst-Offline",
+    "description": "An offline version of Amethyst, a Minecraft launcher based on PojavLauncher, supporting Android and iOS platforms.",
+    "techStack": [
+      "Java",
+      "Kotlin",
+      "Objective-C/Swift",
+      "Gradle",
+      "Make",
+      "Bash"
+    ],
+    "mainComponents": [
+      "Amethyst-Android",
+      "Amethyst-iOS"
+    ],
+    "hasDatabase": false,
+    "hasApi": false,
+    "keyFiles": [
+      "README.md",
+      "android-build.sh",
+      "android-build.bat",
+      "MinecraftDownloader.patch",
+      "MinecraftResourceDownloadTask.patch",
+      "Tools.patch",
+      "patches/JavaLauncherMachFix.patch",
+      "update-submodules.bat"
+    ],
+    "entryPoints": [
+      "android-build.sh",
+      "android-build.bat"
+    ],
+    "buildSystem": "Custom (Gradle/Make with patches)"
+  },
+  "files": {
+    "docs": [
+      "ARCHITECTURE.md",
+      "API.md",
+      "DATABASE.md",
+      "SETUP.md",
+      "README.md"
+    ],
+    "agent": [
+      "context.md",
+      "codebase-overview.md"
+    ]
+  },
+  "usage": {
+    "inputTokens": 5084,
+    "outputTokens": 6534
+  }
+}
