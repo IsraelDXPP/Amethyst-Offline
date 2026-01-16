@@ -1,0 +1,9 @@
+--- a/Amethyst-iOS/Natives/JavaLauncher.m
++++ b/Amethyst-iOS/Natives/JavaLauncher.m
+@@ -1,5 +1,9 @@
+ #import <Foundation/Foundation.h>
+
++#include <mach/mach.h>
++#include <mach/exception.h>
++#include <mach/mach_error.h>
++
