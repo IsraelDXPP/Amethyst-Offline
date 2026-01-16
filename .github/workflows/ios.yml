@@ -84,6 +84,10 @@ jobs:
         run: |
           gpatch ./Amethyst-iOS/Natives/MinecraftResourceDownloadTask.m MinecraftResourceDownloadTask.patch
 
+      - name: Patch JavaLauncher Mach headers
+        run: |
+          gpatch ./Amethyst-iOS/Natives/JavaLauncher.m patches/JavaLauncherMachFix.patch
+
       - name: Build for ${{ matrix.platform_name }}
         run: |
           cd Amethyst-iOS
